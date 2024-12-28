@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificate</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 50px;
+    }
+    .certificate {
+      border: 2px solid #000;
+      padding: 20px;
+      display: inline-block;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Certificate Verification</h1>
+  <p>Enter your certificate ID in the URL query to verify it.</p>
+  <div id="certificate" class="certificate">
+    Loading certificate details...
+  </div>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get('id');
+
+    const certificates = {
+      "33351789": "Certificate of Completion: John Doe",
+      "12345678": "Certificate of Achievement: Jane Smith"
+    };
+
+    const certificateDiv = document.getElementById('certificate');
+    if (id && certificates[id]) {
+      certificateDiv.innerText = certificates[id];
+    } else {
+      certificateDiv.innerText = "Certificate not found!";
+    }
+  </script>
+</body>
+</html>
