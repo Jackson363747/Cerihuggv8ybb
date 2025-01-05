@@ -1,58 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Certificate</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin: 50px;
-    }
-    .certificate {
-      border: 2px solid #000;
-      padding: 20px;
-      display: inline-block;
-      margin-top: 20px;
-    }
-  </style>
-</head>
-<body>
-  <h1>Certificate Verification</h1>
-  <p>Enter your certificate ID in the URL query to verify it.</p>
-  <div id="certificate" class="certificate">
-    Loading certificate details...
-  </div>
-  <script>
-    const params = new URLSearchParams(window.location.search);
-    const id = params.get('id');
-
-    const certificates = {
-      "33351789": "Certificate of Completion: John Doe",
-      "12345678": "Certificate of Achievement: Jane Smith"
-    };
-
-    const certificateDiv = document.getElementById('certificate');
-    if (id && certificates[id]) {
-      certificateDiv.innerText = certificates[id];
-    } else {
-      certificateDiv.innerText = "Certificate not found!";
-    }
-  </script>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certificate Page</title>
+    <title>Certificate Verification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            margin: 0;
+            color: #007bff;
+        }
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .info-table th, .info-table td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .info-table th {
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .download-btn {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .download-btn a {
+            text-decoration: none;
+            padding: 10px 20px;
+            color: #fff;
+            background-color: #007bff;
+            border-radius: 5px;
+        }
+        .download-btn a:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #777;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Certificate Verification</h1>
-    <!--SmartSelect_٢٠٢٤١٢٢٨_١٦٣٣١٣_Xodo.jpg -->
-    <img src="SmartSelect_٢٠٢٤١٢٢٨_١٦٣٣١٣_Xodo.jpg" alt="Certificate Image">
+    <div class="container">
+        <div class="header">
+            <h1>Ronak Academy</h1>
+            <p>We are dedicated to delivering top-quality training and certification services.</p>
+        </div>
+        <table class="info-table">
+            <tr>
+                <th>Name</th>
+                <td>Zainab Kadhim Qasem</td>
+            </tr>
+            <tr>
+                <th>Certificate Number</th>
+                <td>RTA-FA-2024-XXR998</td>
+            </tr>
+            <tr>
+                <th>Company Name</th>
+                <td>N/A</td>
+            </tr>
+            <tr>
+                <th>Issue Date</th>
+                <td>2024-10-18</td>
+            </tr>
+            <tr>
+                <th>Valid Date</th>
+                <td>2026-10-18</td>
+            </tr>
+            <tr>
+                <th>Scope</th>
+                <td>Basic Life Support and First Aid</td>
+            </tr>
+            <tr>
+                <th>Certificate Type</th>
+                <td>2 Hours Training under OSHA standards and ANSI Z490.1.</td>
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td>Iraq, Basra ABO-ALKHASIB</td>
+            </tr>
+        </table>
+        <div class="download-btn">
+            <a href="#" download>Download Certificate</a>
+        </div>
+    </div>
+    <footer>
+        Ronak Academy is proudly powered by WordPress
+    </footer>
 </body>
 </html>
-<img src="SmartSelect_٢٠٢٤١٢٢٨_١٦٣٣١٣_Xodo.jpg" alt="Certificate Image">
