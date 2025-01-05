@@ -3,74 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certificate Verification</title>
+    <title>Certificate Info</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
+            margin: 20px;
             padding: 0;
-            background-color: #f4f4f4;
         }
         .container {
-            max-width: 800px;
-            margin: 20px auto;
+            max-width: 600px;
+            margin: auto;
+            border: 1px solid #ddd;
             padding: 20px;
-            background: #fff;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-            border-radius: 8px;
+            border-radius: 5px;
         }
-        .header {
+        h1 {
             text-align: center;
-            margin-bottom: 20px;
         }
-        .header h1 {
-            margin: 0;
-            color: #007bff;
-        }
-        .info-table {
+        table {
             width: 100%;
             border-collapse: collapse;
-            margin: 20px 0;
+            margin-top: 20px;
         }
-        .info-table th, .info-table td {
-            padding: 10px;
+        table th, table td {
             text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
-        .info-table th {
-            background-color: #f8f9fa;
-            color: #333;
+            padding: 8px;
+            border: 1px solid #ddd;
         }
         .download-btn {
-            display: block;
             text-align: center;
             margin-top: 20px;
         }
         .download-btn a {
             text-decoration: none;
-            padding: 10px 20px;
-            color: #fff;
             background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
             border-radius: 5px;
         }
         .download-btn a:hover {
             background-color: #0056b3;
         }
-        footer {
-            text-align: center;
-            margin-top: 20px;
-            color: #777;
-            font-size: 14px;
-        }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <h1>Ronak Academy</h1>
-            <p>We are dedicated to delivering top-quality training and certification services.</p>
-        </div>
-        <table class="info-table">
+        <h1>Certificate Info</h1>
+        <table>
             <tr>
                 <th>Name</th>
                 <td>Mustafa Sajjad Abdul Hassan</td>
@@ -97,19 +76,20 @@
             </tr>
             <tr>
                 <th>Certificate Type</th>
-                <td>2 Hours Training under OSHA standards and ANSI Z490.1.</td>
+                <td>2 Hours Training under the rules and regulations of U.S Department of Labor (OSHA) training standards and ANSI Z490.1 Criteria for Accepted Practices in Safety, Health and Environmental.</td>
             </tr>
             <tr>
                 <th>Address</th>
                 <td>Iraq, Basra ABO-ALKHASIB</td>
             </tr>
+            <tr>
+                <th>Notes</th>
+                <td></td>
+            </tr>
         </table>
         <div class="download-btn">
-            <a href="#" download>Download Certificate</a>
+            <a href="certificate.pdf" download>Download Certificate</a>
         </div>
     </div>
-    <footer>
-        Ronak Academy is proudly powered by WordPress
-    </footer>
 </body>
 </html>
